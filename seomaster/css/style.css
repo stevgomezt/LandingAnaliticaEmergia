@@ -196,6 +196,12 @@ h6,
         left 45% bottom -1px,
         center bottom -1px;
     background-repeat: no-repeat;
+    background-size:
+        auto,
+        auto,
+        auto,
+        auto,
+        100% auto; /* La última imagen se adapta a todo el ancho del contenedor */
 }
 
 

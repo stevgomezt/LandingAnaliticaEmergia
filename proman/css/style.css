@@ -428,3 +428,7 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+.logodoblexs{
+    width: 10%;
+}
