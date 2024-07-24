@@ -299,37 +299,38 @@
 
 
 /*** Team ***/
-.team-item img {
+.team-item {
+    position: relative;
     transition: .5s;
+    z-index: 1;
 }
 
-.team-item:hover img {
-    opacity: .7;
-}
-
-.team-item .team-text {
+.team-item::after {
     position: absolute;
+    content: "";
+    top: 3rem;
+    right: 3rem;
+    bottom: 0;
     left: 0;
-    right: 60px;
-    bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover::after {
+    background: var(--primary);
+}
+
+.team-item h5,
+.team-item small {
     transition: .5s;
 }
 
-.team-item:hover .team-text {
-    right: 30px;
-    opacity: 1;
-}
-
-.team-item .team-text div {
-    transition: .5s;
-}
-
-.team-item:hover .team-text div {
-    margin-left: 30px;
+.team-item:hover h5,
+.team-item:hover small {
+    color: var(--light);
 }
 
 
