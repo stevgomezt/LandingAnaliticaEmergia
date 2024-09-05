@@ -256,6 +256,13 @@
 }
 
 /*** Service ***/
+.container-journey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .service-item .bg-icon {
     width: 100px;
     height: 100px;
@@ -435,4 +442,10 @@
 
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
+}
+
+.video {
+    width: 90%; /* Ajusta el ancho del video al contenedor */
+    height: auto; /* Mantiene la relación de aspecto del video */
+    /* border: solid red; */
 }

@@ -7,7 +7,7 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 3000); // Retraso de 5 segundos (5000 milisegundos)
     };
     spinner();
 
