@@ -6,6 +6,11 @@
     --dark: #12141d;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 /* .bg-light {
     background-image: linear-gradient(
         to right bottom,
@@ -256,11 +261,12 @@
 }
 
 /*** Service ***/
-.container-journey{
+.container-journey {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    /* border: solid red; */
 }
 
 .service-item .bg-icon {
